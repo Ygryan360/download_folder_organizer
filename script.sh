@@ -16,7 +16,9 @@ declare -A FOLDER_MAP=(
 
 # Current date for the log
 mkdir -p $HOME/logs
+
 echo "==== $(date '+%Y-%m-%d %H:%M:%S') ====" >> "$LOG_FILE"
+echo "Organization is starting." >> "$LOG_FILE"
 
 # Go to the downloads directory
 cd "$DOWNLOADS_DIR" || {
@@ -43,6 +45,8 @@ for file in *; do
     fi
 done
 
+echo "==== $(date '+%Y-%m-%d %H:%M:%S') ====" >> "$LOG_FILE"
 echo "Organization complete." >> "$LOG_FILE"
+
 echo -e "\e[32mCheck the log file at $LOG_FILE for details.\e[0m"
 # End of script
