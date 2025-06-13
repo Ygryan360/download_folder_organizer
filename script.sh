@@ -2,7 +2,7 @@
 
 # Base directory
 DOWNLOADS_DIR="$HOME/Downloads"
-LOG_FILE="$HOME/logs/download_files_organizer.log"
+LOG_FILE="$HOME/.logs/download_files_organizer.log"
 
 # Target folders
 declare -A FOLDER_MAP=(
